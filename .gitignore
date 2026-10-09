@@ -1,0 +1,31 @@
+# Environment files (NEVER commit production secrets)
+.env
+.env.local
+.env.production
+!.env.example
+!.env.production.example
+
+# SSL certificates
+certbot/
+
+# Docker volumes
+postgres_data/
+redis_data/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Deployment
+.last_deploy_commit
+
+# Android keystore
+mobile/android/key.properties
+mobile/android/*.jks
+mobile/android/*.keystore

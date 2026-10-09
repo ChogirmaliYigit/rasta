@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.env.*
+.venv/
+venv/
+env/
+.pytest_cache/
+.coverage
+htmlcov/
+alembic/versions/
+# Keep init but ignore migrations
+!alembic/versions/__init__.py
+.git/
+.gitignore
+Dockerfile*
+docker-compose*

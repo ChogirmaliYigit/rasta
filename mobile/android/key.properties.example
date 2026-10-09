@@ -1,0 +1,6 @@
+# Android Keystore signing configuration
+# Generate keystore: keytool -genkey -v -keystore rasta-release.jks -keyalg RSA -keysize 2048 -validity 10000 -alias rasta
+storePassword=your_keystore_password
+keyPassword=your_key_password
+keyAlias=rasta
+storeFile=rasta-release.jks
