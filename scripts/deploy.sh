@@ -54,6 +54,7 @@ deploy() {
 
     log_info "Pulling latest code..."
     git pull origin main
+    git submodule update --init --recursive
 
     log_info "Building Docker images..."
     docker compose -f "$COMPOSE_FILE" build --no-cache
