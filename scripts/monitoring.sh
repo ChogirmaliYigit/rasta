@@ -24,7 +24,7 @@ if [ "$DOWN_CONTAINERS" -gt 0 ]; then
 fi
 
 # 2. Check Backend Health
-if ! curl -s -f http://localhost:8000/health > /dev/null; then
+if ! curl -s -f http://localhost:8003/health > /dev/null; then
     send_notification "🚨 Rasta Alert: Backend health check failed!"
 fi
 

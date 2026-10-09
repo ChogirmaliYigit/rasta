@@ -77,7 +77,7 @@ deploy() {
     sleep 5
     RETRIES=5
     for i in $(seq 1 $RETRIES); do
-        if docker compose -f "$COMPOSE_FILE" exec -T backend curl -sf http://localhost:8000/health > /dev/null 2>&1; then
+        if docker compose -f "$COMPOSE_FILE" exec -T backend curl -sf http://localhost:8003/health > /dev/null 2>&1; then
             log_info "✅ Backend is healthy!"
             break
         fi
