@@ -39,6 +39,9 @@ check_env() {
         exit 1
     fi
     source "$APP_DIR/$ENV_FILE"
+    
+    # Docker Compose o'zgaruvchilarni topishi uchun .env.production ni .env ga nusxalaymiz
+    cp -f "$APP_DIR/$ENV_FILE" "$APP_DIR/.env"
 }
 
 deploy() {
